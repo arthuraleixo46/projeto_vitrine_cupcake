@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ cupcake.nome }} — Cupcake Store</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="bg-light">
+<div class="container py-5">
+  <a href="/" class="btn btn-link mb-3">← Voltar para a vitrine</a>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <img src="{{ cupcake.image }}" class="img-fluid rounded-3 shadow-sm" alt="{{ cupcake.nome }}">
+    </div>
+    <div class="col-md-6">
+      <h1 class="fw-bold">{{ cupcake.nome }}</h1>
+      <p class="text-muted">Sabor: {{ cupcake.sabor }}</p>
+      <h3 class="text-primary">R$ {{ '%.2f'|format(cupcake.price) }}</h3>
+      <p class="mt-4">Futuramente será implementeado a opção do ADMIN digitar a "descrição"</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
