@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Cupcake Store — Vitrine (Flask + MongoDB)
 
 ## Descrição
@@ -46,6 +46,3 @@ python app.py
 ## Observações
 - Imagens enviadas pelo admin são salvas em `static/uploads`.
 - Para produção, configure um caminho de upload seguro e ajuste permissões.
-=======
-# projeto_vitrine_cupcake
->>>>>>> 67460b52cf083251d61d6b07b26ca640fbd649a6
